@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<title>初心-在线商城</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content=""/>
+	<!--可共用-->
+	<link rel="alternate icon" type="image/x-icon" href="__PUBLIC__/images/chuxin.png">
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/ns_common.css">
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/ns_color_style.css">
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/iconfont.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/layer.css" id="layuicss-skinlayercss">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/public.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/nav.js"></script>
+	<script src="__PUBLIC__/js/time_common.js" type="text/javascript"></script>
+</head>
+<body>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/register.css"/>
+<script src="__PUBLIC__/js/layer.js"></script>
+<div class="header w990">
+	<div class="logo-info">
+		<a href="http://localhost/666666/index.php" class="web-logo-a"><img alt="logo" src="__PUBLIC__/picture/logo.png" class="weblogo"/></a>
+	</div>
+</div>
+<div class="reg-content">
+	<div class="w990">
+		<div class="reg-form">
+			<div class="reg-con">
+<div class="reg-type">
+{if condition="$flag eq true "}
+	<p class="login-info">
+		欢迎您：{$Request.session.username}<font color="#999">丨</font><a href="javascript:void(0);" class="loginout" title="退出" class="color">&nbsp;退出</a>
+	</p> 
+			{/if}  
+	<ul class="clearfix">
+				<li class="active" ><a href="javascript:void(0);">用户信息</a></li>
+			</ul>
+</div>
+				<div class="reg-wrap">
+					<div class="reg-wrap-con" style="background: url(__PUBLIC__/images/register_bg_image.png) no-repeat right 70px;">
+						<form class="form-horizontal" name="register" method="post" id="register">
+						<input type="hidden" name="_csrf" value="Q2dXM2NPVXYbFDZYMT0TNycsLkklHQ1HAQsGAA5/OjAaHxtUG3s7Dg==">
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>用户名：</span>
+								</label>
+								<div class="form-control-box">
+									{$info.username}
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>邮箱：</span>
+								</label>
+								<div class="form-control-box">
+									{$info.email}
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>电话：</span>
+								</label>
+								<div class="form-control-box">
+									{$info.tel}
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>状态：</span>
+								</label>
+								<div class="form-control-box">
+								{if condition="$info.status eq '1' "} 启用 {else /}
+								禁用【<font color="red">请联系管理员：1289649331</font>】
+                        {/if} 
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>注册时间：</span>
+								</label>
+								<div class="form-control-box">
+									{$info.add_time|date="Y-m-d H:i:s",###}
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							
+							
+								<div class="form-group m-10">
+								<label class="input-left">&nbsp;</label>
+								<div class="form-control-box">
+								</div>
+							</div>
+							
+							<div class="reg-btn">
+								<div class="form-group form-group-spe">
+									<label class="input-left"></label>
+									<div class="form-control-box">
+					  					<input type="button" class="btn-img btn-entry bg-color loginout" id="loginout" name="btn_submit" value="退出登录">
+									</div>
+									<div class="invalid"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="site-footer">
+	<div class="footer-related">
+		<div class="footer-info">
+			<div class="info-text">
+				<!-- 底部导航 -->
+				<div class="txt" id="bottom_copyright">
+					河北溜溜网络科技有限公司 版权所有<br>
+					Copyright © 2018 All Rights Reserved | 初心 - 杨瑞超
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<title>初心-在线商城</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content=""/>
+	<link rel="alternate icon" type="image/x-icon" href="__PUBLIC__/images/chuxin.png">
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/ns_bottom.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/layer.css" id="layuicss-skinlayercss">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/public.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.fly.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/nav.js"></script>
+</head>
+<body>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/login.css"/>
+<link href="__PUBLIC__/css/member_login.css" rel="stylesheet" type="text/css"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/ns_default.css" />
+<div class="header_min" id="header"></div>
+<div class="user_head_bg">
+	<div class="user_head">
+		<div class="logobox">
+			<a href="http://localhost/666666/index.php" class="web-logo-a" style="padding-top:60px;">
+				<img src="__PUBLIC__/picture/logo.png" border="0" class="weblogo">
+			</a>
+		</div>
+		<div class="reg">
+			<span style="float:right;">
+				<span>没有账号？</span>
+				<a href="{:url('register/index')}" style="color:white; text-decoration: none;line-height: 40px;">
+					<span style="display:inline-block;color:#0689e1;line-height:43px;">立即注册</span>
+				</a>
+			</span>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="ban_box">
+	<div class="banner" >
+		<ul class="full-screen-slides" id="fullScreenSlides"></ul>
+	</div>
+	<div class="maind">
+		<div class="login js-login" style="background:url(__PUBLIC__/images/blue_login_banner.png) no-repeat 0 30px;">
+			<!--用户名密码 -->
+			<div class="mob j_mob_show" style="background:#fff;">
+<!-- 				 -->
+				<div class="tit">
+					<span class="switch_txt active">初心商城登录</span>
+				</div>
+				<div class="type_box active">
+					<div class="err J_errbox" id="hint" style="display:none;"></div>
+					<div class="inputbox J_focus">
+						<form action="" method="post" id="user_login_form">
+						<div class="imgbg"></div>
+						<input type="text" class="input_login" name="username" id="username" placeholder="手机号/会员名/邮箱" />
+					</div>
+					<div class="inputbox J_focus">
+						<div class="imgbg pwd"></div>
+						<input type="password" class="input_login pwd J_loginword" name="password" id="password" placeholder="请输入密码" />
+					</div>
+										<div class="txtbox link_gray6">
+						<div class="td2" style="float: right;text-align: left;"><a href="javascript:void(0);">忘记密码?</a></div>
+					</div>
+					<div class="btnbox"><input class="btn_login J_hoverbut" type="button" id="user_login" value="登录"></div>
+					</form>
+					
+			 						</div>
+			</div>
+		</div>
+	</div>
+</div>
+<input type="hidden" id="J_loginType" value="0" />
+<input type="hidden" id="verify_userlogin" value="0" />
+<input type="button" id="origin_btnCheck" style="display:none;"/>
+<input type="button" id="btnCheck" style="display:none;"/>
+<input type="hidden" id="J_sendVerifyType" value="0"/>
+<div id="popup-captcha">
+	<div class="gt_input">
+		<input class="geetest_challenge" type="hidden" name="geetest_challenge"/>
+		<input class="geetest_validate" type="hidden" name="geetest_validate"/>
+		<input class="geetest_seccode" type="hidden" name="geetest_seccode"/>
+	</div>
+</div>
+<div class="footer_min" id="footer">
+	<div class="txt" id="bottom_copyright">
+		<p>
+			河北溜溜网络科技有限公司 版权所有<br>
+			Copyright © 2018 All Rights Reserved | 初心 - 杨瑞超
+		</p>
+	</div>
+</div>
+<div class="disappear_tooltip pie_about" style="left: 634.5px; top: 286.5px;">
+	<div class="icon"></div>
+	<div class="content"></div>
+</div>
+</body>
+</html>

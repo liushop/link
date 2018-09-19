@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<title>初心-在线商城</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content=""/>
+	<!--可共用-->
+	<link rel="alternate icon" type="image/x-icon" href="__PUBLIC__/images/chuxin.png">
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/ns_common.css">
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/ns_color_style.css">
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/iconfont.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/layer.css" id="layuicss-skinlayercss">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/public.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/nav.js"></script>
+	<script src="__PUBLIC__/js/time_common.js" type="text/javascript"></script>
+</head>
+<body>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/register.css"/>
+<script src="__PUBLIC__/js/layer.js"></script>
+<div class="header w990">
+	<div class="logo-info">
+		<a href="http://localhost/666666/index.php" class="web-logo-a"><img alt="logo" src="__PUBLIC__/picture/logo.png" class="weblogo"/></a>
+	</div>
+</div>
+<div class="reg-content">
+	<div class="w990">
+		<div class="reg-form">
+			<div class="reg-con">
+<div class="reg-type">
+	<p class="login-info">
+		我已经注册，现在就<a href="{:url('login/index')}" title="马上登录" class="color">&nbsp;登录</a>
+	</p>   
+	<ul class="clearfix">
+				<li class="active" ><a href="javascript:void(0);">用户注册</a></li>
+			</ul>
+</div>
+				<div class="reg-wrap">
+					<div class="reg-wrap-con" style="background: url(__PUBLIC__/images/register_bg_image.png) no-repeat right 70px;">
+						<form class="form-horizontal" name="register" method="post" id="register">
+						<input type="hidden" name="_csrf" value="Q2dXM2NPVXYbFDZYMT0TNycsLkklHQ1HAQsGAA5/OjAaHxtUG3s7Dg==">
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>用户名：</span>
+								</label>
+								<div class="form-control-box">
+									<input type="text" id="username" class="form-control" name="username" placeholder="请输入用户名" />
+									<span id="usernameyz"></span>
+									<input type="hidden" value="不存在" id="isset_username"/>
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>邮箱：</span>
+								</label>
+								<div class="form-control-box">
+									<input type="text" id="email" class="form-control" name="email" placeholder="请输入邮箱" />
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>电话：</span>
+								</label>
+								<div class="form-control-box">
+									<input type="text" id="tel" class="form-control" name="tel" placeholder="请输入电话" />
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>密码：</span>
+								</label>
+								<div class="form-control-box">
+									<input type="password" id="password" class="form-control" name="password" autocomplete="off" placeholder="请输入密码">
+									<!--  <i class="fa fa-eye-slash pwd-toggle" data-id="password"></i>	-->
+									<span id="yzpassword"></span>
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>确认密码：</span>
+								</label>
+								<div class="form-control-box">
+									<input type="password" id="passwords" class="form-control" name="passwords" autocomplete="off" placeholder="请重新输入密码">
+									<!--  <i class="fa fa-eye-slash pwd-toggle" data-id="password"></i>	-->
+									<span id="qrrepass"></span>
+								</div>
+								<div class="invalid"></div>
+							</div>
+							
+							<div class="form-group form-group-spe">
+								<label class="input-left">
+									<span class="spark">*</span>
+									<span>验证码：</span>
+								</label>
+								<div class="form-control-box">
+									<input type="text" id="yzm" class="form-control" name="yzm" placeholder="请输入验证码" style="width:90px;float: left;">
+									
+									<div class="code" id="checkCode" onclick="createCode()" style="float: left"></div>
+									<a href="javascript:void(0);" id="yzm_next" style="float: right;">看不清，换一张</a>
+								</div>
+	
+								<div class="invalid"></div>
+							</div>
+							
+							
+								<div class="form-group m-10">
+								<label class="input-left">&nbsp;</label>
+								<div class="form-control-box">
+									<label>
+										<input type="checkbox"  name="chao99_yes" id="chao99_yes" />
+										<span>我已阅读并同意<a href="javascript:void(0);" id="protocol">《用户注册协议》</a></span>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<span id="yzremember"></span>
+									</label>
+								</div>
+							</div>
+							
+							<div class="reg-btn">
+								<div class="form-group form-group-spe">
+									<label class="input-left"></label>
+									<div class="form-control-box">
+					  					<input type="button" class="btn-img btn-entry bg-color" id="register_btn" name="btn_submit" value="同意协议并注册">
+									</div>
+									<div class="invalid"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="site-footer">
+	<div class="footer-related">
+		<div class="footer-info">
+			<div class="info-text">
+				<!-- 底部导航 -->
+				<div class="txt" id="bottom_copyright">
+					河北溜溜网络科技有限公司 版权所有<br>
+					Copyright © 2018 All Rights Reserved | 初心 - 杨瑞超
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
